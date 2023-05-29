@@ -19,9 +19,18 @@ tests({
     eq(9, calculator.calc());
   },
 
-  '1-1 === TypeError': function () {
+  '1 - 1 === 0': function () {
     const calculator = new Calculator('1-1');
-    fail(calculator.calc());
-    // eq(TypeError, calculator.calc());
+    eq(0, calculator.calc());
+  },
+
+  '1 - 2 === -1': function () {
+    const calculator = new Calculator('1-2');
+    eq(-1, calculator.calc());
+  },
+
+  '1 - 12 === -1': function () {
+    const calculator = new Calculator('1 - 12');
+    eq(-11, calculator.calc());
   },
 });

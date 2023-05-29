@@ -6,5 +6,6 @@ export function isDigit(n) {
 export const TokenType = {
   INTEGER: 'integer',
   PLUS: 'plus',
+  MINUS: 'minus',
   EOF: 'eof',
 };
