@@ -5,7 +5,13 @@ export function isDigit(n) {
 
 export const TokenType = {
   INTEGER: 'integer',
-  PLUS: 'plus',
-  MINUS: 'minus',
+  DOT: '.',
+  LPAREN: '(',
+  RPAREN: ')',
+  MUL: '*',
+  DIV: '/',
+  MOD: '%',
+  PLUS: '+',
+  MINUS: '-',
   EOF: 'eof',
 };
